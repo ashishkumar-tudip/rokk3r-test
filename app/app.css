@@ -1,0 +1,132 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li + li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+body {
+	margin: 0;
+	padding: 0;
+}
+.container-wrapper {
+	width: 100%;
+	float: left;
+}
+.header-wrapper, .footer-wrapper {
+	width: 100%;
+	float: left;
+	background: #2F333A;
+	color: #fff;
+	height: 61px;
+}
+.footer-wrapper {
+	background: #000;
+}
+.profile-wrapper {
+	float: right;
+	padding: 20px 40px;
+	width: auto;
+	height: 100%;
+}
+.sidebar-wrapper {
+	width: 264px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #2F333A;
+	height: 740px;
+	transition: width ease-in-out 0.28s, background linear 0.1s;
+}
+.logo-wrapper {
+	width: 100%;
+	float: left;
+	height: 61px;
+	background: #1E2025;
+}
+.image-details {
+	width: 100%;
+}
+.sidebar-wrapper:hover {
+	width: 50px;
+}
+.menu-section .list-details:hover {
+	width: 30px;
+}
+.menu-wrapper {
+	width: 100%;
+	float: left;
+}
+.menu-section {
+	width: 100%;
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+.menu-section .list-details {
+	list-style: none;
+	float: left;
+	width: 244px;
+	padding: 15px 0 15px 20px;
+	display: block;
+}
+.menu-section .list-details span, .close-menu-section span {
+	padding: 0 5px 0 5px;
+}
+.menu-section .list-details:hover, .close-menu-section:hover {
+	background: #1E2025;
+}
+.close-menu-section {
+	width: 244px;
+	float: left;
+	position: relative;
+	top: 30px;
+	padding: 15px 0 15px 20px;
+}
+.footer-wrapper {
+	position: fixed;
+	bottom: 0;
+}
+.footer-wrapper span {
+	padding: 20px 40px;
+	float: left;
+}
+.chart-wrapper {
+	float: right;
+	padding-right: 39px;
+}
+.chart-details {
+	width: auto;
+    float: right;
+	padding: 20px 0;
+}
+.column-chart-details {
+	float: left;
+    padding-left: 294px;
+}
+.pie-chart-details {
+	float: left;
+	width: auto;
+	padding-left: 20px;
+}
+.highcharts-button.highcharts-contextbutton, .highcharts-credits {
+	display: none;
+}
